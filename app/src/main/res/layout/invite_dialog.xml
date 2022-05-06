@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="#A23B3C"
+    app:cardElevation="10dp"
+    android:layout_height="300dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/comic_sans"
+            android:gravity="center"
+            android:text="This address is not\navailable :("
+            android:textColor="@color/white"
+            android:textSize="32sp">
+
+
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/invite_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border3"
+            android:drawableRight="@drawable/ic_check"
+            android:text="INVITE"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

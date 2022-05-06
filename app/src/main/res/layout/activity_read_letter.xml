@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Letter.ReadLetterActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#A23B3C"
+        android:theme="@style/Widget.AppCompat.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Bartitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:drawablePadding="8dp"
+                    android:text="Ek Chitthi"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/app_con2">
+
+                </ImageView>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/limage"
+        android:layout_below="@+id/toolbar"
+        android:scaleType="fitXY"
+        android:src="@drawable/letter_layout">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/et_read"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:text="Hey babes"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/kristi"
+        android:padding="8dp"
+        android:gravity="left"
+        android:background="@null"
+        android:editable="false"
+        android:cursorVisible="false"
+        android:textSize="32sp">
+
+    </EditText>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp"
+    android:layout_gravity="center"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="#FFC107"
+    android:layout_height="300dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/sent_text"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/circular_anim"
+            app:lottie_speed="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/sent_text"
+            android:textSize="28sp"
+            android:text="Sent !"
+            android:visibility="gone"
+            android:fontFamily="@font/csb"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/buy_more_btn">
+
+        </TextView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/buy_more_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_border"
+            android:drawableRight="@drawable/ic_check"
+            android:text="TRACK"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

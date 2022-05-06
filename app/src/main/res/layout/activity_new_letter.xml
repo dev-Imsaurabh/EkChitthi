@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLayout"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".LetterBox.NewLetterActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6D6A7">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#A23B3C"
+        android:theme="@style/Widget.AppCompat.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Bartitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:drawableRight="@drawable/ic_send"
+                android:drawablePadding="8dp"
+                android:text="Send Letter"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/invite_btn"
+                android:drawableRight="@drawable/ic_share"
+                android:text="Invite your friend\non Ek Chitthi App"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:id="@+id/ll_stamp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/stamp_border"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/selectStamp"
+            android:text="SELECT\nSTAMP">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/stamp_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/ll"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/r_Number"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:textSize="10dp"
+            android:layout_weight="2"
+            android:layout_marginTop="8dp"
+            android:hint="Recipient's Number:(with +91 or any CC) "
+            android:inputType="phone"
+            android:maxLength="13"
+            android:singleLine="true" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/choose_contact"
+            android:src="@drawable/ic_choose_contact"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/r_Name"
+        android:layout_width="240dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/ll"
+        android:maxLength="50"
+        android:hint="Sender's Name(optional): "
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/s_from"
+        android:layout_width="240dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/r_Name"
+        android:editable="false"
+        android:hint="From:  "
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/s_to"
+        android:layout_width="240dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/s_from"
+        android:editable="false"
+        android:hint="To:  "
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_info1"
+        android:layout_below="@+id/s_to"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="4dp"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:text="Distance"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:text="Delivery days"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:text="Delivery Date &amp; time"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_info"
+        android:layout_below="@+id/ll_info1"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/r_distance"
+        android:layout_weight="1"
+        android:drawablePadding="4dp"
+        android:drawableLeft="@drawable/ic_dist"
+        android:text=""
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/r_days"
+            android:layout_weight="1"
+            android:drawablePadding="4dp"
+            android:drawableLeft="@drawable/ic_time"
+            android:text=""
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/r_date"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_cal"
+            android:text=""
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sch_btn"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/ll_info"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="4dp"
+        android:background="@drawable/border1"
+        android:drawableRight="@drawable/ic_schedule"
+        android:enabled="true"
+        android:text="SCHEDULE"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/schedule_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_info"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_toStartOf="@+id/sch_btn"
+        android:padding="4dp"
+        android:text="You have x Schedule left"
+        android:textColor="#A23B3C"
+        android:textSize="12dp"
+        android:visibility="visible" />
+
+
+    <EditText
+        android:id="@+id/r_letter"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/sch_btn"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/letter_border"
+        android:fontFamily="@font/quikhand"
+        android:gravity="left"
+        android:hint="Write your letter here..."
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r_letter"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Max words: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/changing_words"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/max_words"
+            android:text="0"/>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:drawableRight="@drawable/ic_send"
+        android:text="Send"
+        app:cornerRadius="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/dummyTxt"/>
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

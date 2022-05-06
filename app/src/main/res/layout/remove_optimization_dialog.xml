@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="16dp"
+    android:layout_gravity="center"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="#FF9800"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="8dp"
+
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="** WARNING **"
+            android:textSize="32sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="#AC0303"
+            android:id="@+id/warning"/>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warning"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="For Proper Functioning Of\nNOTIFICATION SERVICE\nTurn off BATTERY OPTIMISATION\nFor Ek Chitthi App !!"
+            android:textColor="#AC0303"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imp1"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/warningborder"
+            android:padding="4dp"
+            android:src="@drawable/imp1" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_below="@id/imp1"
+            android:padding="4dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/imp2"
+            android:src="@drawable/imp2"
+            android:background="@drawable/warningborder"
+            android:layout_centerHorizontal="true"
+            android:layout_height="70dp"/>
+
+        <ImageView
+            android:id="@+id/imp3"
+            android:layout_width="320dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/imp2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/warningborder"
+            android:padding="8dp"
+            android:src="@drawable/imp3" />
+
+        <TextView
+            android:id="@+id/info3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imp3"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="**For MIUI users"
+            android:textColor="#AC0303"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imp4"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/info3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/warningborder"
+            android:padding="4dp"
+            android:src="@drawable/imp4" />
+
+        <TextView
+            android:id="@+id/info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_settings"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="**PRESS SETTINGS BUTTON\nTO ENABLE**"
+            android:textColor="#AC0303"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_settings"
+            android:text="SETTINGS"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_border"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>
