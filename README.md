@@ -8,7 +8,7 @@
 
 
 <p align="center">
-    <a href="https://travis-ci.org/steverichey/google-play-badge-svg">
+    <a href="https://play.google.com/store/apps/details?id=com.mac.ekchitthi">
         <img src="https://travis-ci.org/steverichey/google-play-badge-svg.svg?branch=master" alt="Build status">
     </a>
     <a href="./license.md">
