@@ -81,7 +81,7 @@ Enjoy slow messaging and enhance your long relationship :)
 ## Available on
 
 <p align="center">
-<a href="https://play.google.com/store/apps/details?id=com.mac.ekchitthic">
+<a href="https://play.google.com/store/apps/details?id=com.mac.ekchitthi">
 <img src="https://cdn.jsdelivr.net/gh/dev-iamsaurabh/BMICalculator/play.svg" width="50%">
 </a>
 </p>
