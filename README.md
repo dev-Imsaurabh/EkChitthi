@@ -12,7 +12,7 @@
         <img src="https://travis-ci.org/steverichey/google-play-badge-svg.svg?branch=master" alt="Build status">
     </a>
     <a href="./license.md">
-        <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="License: MIT">
+        <img src="https://github.com/dev-iamsaurabh/EkChitthi/blob/master/LICENSE" alt="License: MIT">
     </a>
 </p>
 
