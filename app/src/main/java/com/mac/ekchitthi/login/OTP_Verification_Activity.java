@@ -294,7 +294,7 @@ public class OTP_Verification_Activity extends AppCompatActivity {
 
 
                         } else {
-                            reference.orderByKey().equalTo(user.getPhoneNumber()).addValueEventListener(new ValueEventListener() {
+                            reference.orderByKey().equalTo(user.getPhoneNumber()).addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                                     if (snapshot.exists()) {
@@ -313,7 +313,7 @@ public class OTP_Verification_Activity extends AppCompatActivity {
                                         startActivity(intent);
 
 
-                                    } else {
+                                    } else{
 
                                         User_Details_Model user_details_model = new User_Details_Model(username, phoneNumber, "", user.getUid(),"");
                                         reference.child(user.getPhoneNumber()).child("user info").setValue(user_details_model).addOnCompleteListener(new OnCompleteListener<Void>() {
