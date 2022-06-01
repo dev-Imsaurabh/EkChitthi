@@ -1,6 +1,11 @@
+
+<p align ="center">
+            <img src="https://play-lh.googleusercontent.com/28uIKPYrCnRkHYK0lbrEONq-UwmZ1doFelDZlesazFhQ3upmEA0cLSbvfIQFlEtZNZk=w240-h480-rw", width="20%">
+    </p>
+
+
 <p>
     <h1 align="center">
-        <img src="https://play-lh.googleusercontent.com/28uIKPYrCnRkHYK0lbrEONq-UwmZ1doFelDZlesazFhQ3upmEA0cLSbvfIQFlEtZNZk=w240-h480-rw", width="2%">
         <a href="https://play.google.com/store/apps/details?id=com.mac.ekchitthi">
             Ek Chitthi: Letter Posting App (JAVA) by Saurabh Kumar<br>PlayStore handle :- imSoloDeveloper
         </a>
